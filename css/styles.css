@@ -33,12 +33,16 @@ img {
   --accent: #2196f3;
 }
 body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+  font-family:
+    "Roboto",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
     sans-serif;
   color: var(--main-color);
 }
 .header {
- 
   background-color: var(--white);
 }
 .container {
@@ -71,7 +75,7 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;        
+  bottom: 0;
   width: 100%;
   height: 4px;
   background-color: var(--accent);
@@ -80,7 +84,7 @@ nav {
 }
 .site-nav a,
 .site-nav .link {
-  display: block;      
+  display: block;
   padding: 32px 0;
   position: relative;
   color: var(--main-color);
@@ -145,10 +149,8 @@ nav {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -296,7 +298,9 @@ nav {
   text-align: center;
   padding-bottom: 30px;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-list img {
@@ -313,9 +317,10 @@ nav {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons {
   display: flex;
@@ -334,7 +339,9 @@ nav {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .footer {
@@ -405,22 +412,24 @@ nav {
   opacity: 0;
   z-index: 1;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-overlay {
   position: absolute;
-  inset: 0; 
+  inset: 0;
   padding: 63px 24px;
-    color: var(--white);
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
   z-index: 2;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-element:hover .thumb::before {
@@ -433,7 +442,7 @@ nav {
   opacity: 1;
 }
 .portfolio-list {
-  position:relative;
+  position: relative;
 }
 /*portfolio */
 
@@ -456,7 +465,9 @@ nav {
 }
 .flex-element:hover,
 .flex-element:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-content {
@@ -490,7 +501,8 @@ nav {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
@@ -523,7 +535,8 @@ nav {
   height: 44px;
   border-radius: 50%;
   display: flex;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
@@ -563,6 +576,72 @@ nav {
   margin-top: 0;
   justify-content: flex-start;
 }
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-row {
+  display: flex;
+  gap: 12px;
+}
+.subscribe-label {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  font-weight: 700;
+}
+.subscribe-row input {
+  color: var(--white);
+  width: 358px;
+  height: 50px;
+  padding: 20px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.subscribe-row button,
+.form button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  margin-left: 10px;
+}
+.subscribe-row button:hover,
+.form button:hover,
+.subscribe-row button:focus,
+.form button:focus {
+  border: 1px solid var(--accent);
+  background-color: var(--bg-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -570,24 +649,27 @@ nav {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   min-height: 528px;
   min-width: 521px;
   position: absolute;
+  border-radius: 4px;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
- 
 }
 .icon-close {
- width: 11px;
- height: 11px;
+  width: 11px;
+  height: 11px;
 }
 .close-btn {
   position: absolute;
@@ -596,7 +678,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -613,4 +695,151 @@ nav {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.form {
+  padding: 40px;
+}
+.form-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+.form-field input {
+  width: 100%;
+  padding: 11px 12px;
+  height: 40px;
+  padding-left: 40px;
+
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.form-field input:hover,
+.form-field textarea:hover {
+  border-color: var(--accent);
+}
+
+.form-field:hover .input-icon {
+  color: var(--accent);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.form-field:hover .input-icon,
+.form-field:focus-within .input-icon {
+  color: var(--accent);
+}
+
+.form-field input:focus::placeholder,
+.form-field textarea:focus::placeholder {
+  opacity: 0.3;
+}
+
+.form-field input,
+.form-field textarea,
+.input-icon {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field label {
+  margin: 4px;
+  opacity: 0.5;
+}
+.form-field input::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-icon {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--main-color);
+}
+.form button {
+  border: 1px solid var(--accent);
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+.form-field textarea {
+  width: 100%;
+  padding: 12px 16px;
+  height: 120px;
+
+  resize: none;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+}
+.form-field textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.checkbox {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 10px;
+  width: 100%;
+  height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+.checkbox-input:checked ~ .checkbox-icon {
+  width: 16px;
+  height: 16px;
+
+  background-color: var(--accent);
+  background-image: url("../images/check.svg");
+  background-size: 16px 16px;
+  background-position: center;
+
+  border-color: var(--accent);
+  border-radius: 2px;
+}
+.checkbox-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+
+  border: 1px solid var(--main-color);
+  border-radius: 2px;
+}
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 15px;
+
+  cursor: pointer;
 }
