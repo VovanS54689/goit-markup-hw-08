@@ -1,0 +1,148 @@
+.footer {
+  background-color: var(--bg-dark);
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    gap: 94px;
+  }
+
+  &__left {
+    max-width: 231px;
+  }
+
+  &__address {
+    font-style: normal;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__contacts {
+    ul {
+      margin-top: 20px;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 9px;
+        }
+      }
+    }
+  }
+
+  &__contact-link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+  }
+
+  .logo {
+    display: inline-block;
+
+    span {
+      color: var(--white);
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__social-list {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__social-icon {
+    fill: currentColor;
+  }
+
+  .social {
+    margin-top: 0;
+    justify-content: flex-start;
+    &__link {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      color: var(--white);
+    }
+  }
+
+  .subscribe {
+    &__form {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__row {
+      display: flex;
+      gap: 12px;
+      & input {
+        color: var(--white);
+        width: 358px;
+        height: 50px;
+        padding: 20px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+    &__label {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: var(--white);
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+
+    gap: 10px;
+
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .icon-send {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+    margin-left: 10px;
+  }
+}
