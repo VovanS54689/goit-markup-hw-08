@@ -1,5 +1,25 @@
 .container {
-  width: 1200px;
+  max-width: 480px;
+  padding: 0px 15px;
   margin: 0 auto;
-  padding: 0 15px;
+  width: 100%;
+}
+
+.header {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

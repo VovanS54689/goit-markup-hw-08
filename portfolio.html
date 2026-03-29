@@ -15,8 +15,16 @@
 <body>
   <header class="header">
     <div class="container">
+      <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="18" height="18" fill="currentColor">
+
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <nav class="site-nav">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a href="./index.html" class="site-nav__link">Студія</a>
@@ -29,20 +37,21 @@
           </li>
         </ul>
 
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com"><svg class="contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>info@devstudio.com</a>
-          </li>
 
-          <li>
-            <a href="tel:+380961111111"><svg class="contacts-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
       </nav>
+      <ul class="contacts">
+        <li>
+          <a href="mailto:info@devstudio.com"><svg class="contacts-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+
+        <li>
+          <a href="tel:+380961111111"><svg class="contacts-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
@@ -61,7 +70,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/our-people-make-difference.jpg" alt="Технокряк" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/our-people-make-difference-desktop.jpg,
+                    ./images/our-people-make-difference-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/our-people-make-difference-tablet.jpg,
+                    ./images/our-people-make-difference-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/our-people-make-difference-mobile.jpg,
+                    ./images/our-people-make-difference-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/our-people-make-difference.jpg" alt="Технокряк" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -77,7 +105,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/basketball.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/basketball-desktop.jpg,
+                    ./images/basketball-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/basketball-tablet.jpg,
+                    ./images/basketball-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/basketball-mobile.jpg,
+                    ./images/basketball-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/basketball.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -95,7 +142,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/seafood.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/seafood-desktop.jpg,
+                    ./images/seafood-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/seafood-tablet.jpg,
+                    ./images/seafood-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/seafood-mobile.jpg,
+                    ./images/seafood-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/seafood.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -111,7 +177,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/headphones.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/headphones-desktop.jpg,
+                    ./images/headphones-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/headphones-tablet.jpg,
+                    ./images/headphones-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/headphones-mobile.jpg,
+                    ./images/headphones-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/headphones.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -127,7 +212,25 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/box.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/box-desktop.jpg,
+                    ./images/box-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/box-tablet.jpg,
+                    ./images/box-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/box-mobile.jpg,
+                    ./images/box-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/box.jpg" alt="Постер" width="100%" />
+                </picture>
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -143,7 +246,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/monitor-apple.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/monitor-apple-desktop.jpg,
+                    ./images/monitor-apple-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/monitor-apple-tablet.jpg,
+                    ./images/monitor-apple-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/monitor-apple-mobile.jpg,
+                    ./images/monitor-apple-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/monitor-apple.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -159,7 +281,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/book.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/book-desktop.jpg,
+                    ./images/book-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/book-tablet.jpg,
+                    ./images/book-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/book-mobile.jpg,
+                    ./images/book-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/book.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -175,7 +316,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/label-tag.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/label-tag-desktop.jpg,
+                    ./images/label-tag-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/label-tag-tablet.jpg,
+                    ./images/label-tag-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/label-tag-mobile.jpg,
+                    ./images/label-tag-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/label-tag.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -191,7 +351,26 @@
           <li class="flex-element">
             <a href="#">
               <div class="thumb">
-                <img src="images/macbook.jpg" alt="Постер" width="370" height="294" />
+                <picture>
+
+                  <source media="(min-width: 1200px)" srcset="
+                    ./images/macbook-desktop.jpg,
+                    ./images/macbook-desktop@2x.jpg 2x
+                  " />
+
+                  <source media="(min-width: 768px)" srcset="
+                    ./images/macbook-tablet.jpg,
+                    ./images/macbook-tablet@2x.jpg 2x
+                  " />
+
+                  <source srcset="
+                    ./images/macbook-mobile.jpg,
+                    ./images/macbook-mobile@2x.jpg 2x
+                  " />
+
+                  <img src="images/macbook.jpg" alt="Постер" width="100%" />
+                </picture>
+
                 <p class="card-overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -260,14 +439,63 @@
         <div class="subscribe__row">
           <input type="email" name="subscribe-mail" id="subscribe-mail" placeholder="E-mail" />
           <button class="button button--primary subscribe__button" type="submit">
+
             Підписатися<svg class="icon-send">
-              <use href="./images/send.svg"></use>
+              <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
+
         </div>
       </form>
     </div>
   </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" width="18" height="18">
+        <use href="./images/icons.svg#icon-close" />
+      </svg>
+    </button>
+
+    <ul class="mobile-navigation">
+      <li> <a href="./index.html" class="site-nav__link current">Студія</a></li>
+      <li> <a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+      <li><a href="#contacts" class="site-nav__link">Контакти</a></li>
+    </ul>
+    <ul class="mobile-contacts">
+      <li>
+        <a class="mobile-contacts__tel" href="tel:+380961111111">
+          +38 096 111 11 11
+        </a>
+      </li>
+      <li>
+        <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    <ul class="mobile-socials">
+      <li>
+        <a href="https://www.instagram.com">Instagram</a>
+      </li>
+      <li>
+        <a href="#">Twitter</a>
+      </li>
+      <li>
+        <a href="#">Facebook</a>
+      </li>
+      <li>
+        <a href="#">Linkedin</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Ставимо перед закриваючим тегом body -->
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

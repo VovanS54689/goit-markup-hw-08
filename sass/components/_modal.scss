@@ -1,14 +1,15 @@
 .backdrop {
+  padding: 93px 15px;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -17,13 +18,12 @@
 }
 
 .modal {
-  min-height: 528px;
-  min-width: 521px;
+  width: calc(100% - 15px * 2);
+
+  min-height: 609px;
   position: absolute;
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   transition:
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,5 +54,51 @@
   &:hover,
   &:focus {
     color: var(--accent);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 528px;
+    min-width: 521px;
+    position: absolute;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    transition:
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #ffffff;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
   }
 }

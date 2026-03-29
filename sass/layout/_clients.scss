@@ -10,13 +10,15 @@
   }
   &__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
   }
   &__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -35,5 +37,27 @@
   }
   &__icon {
     fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__link {
+      width: 170px;
+
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #afb1b8;
+      transition:
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+    }
   }
 }
