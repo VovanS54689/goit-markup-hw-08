@@ -1,22 +1,15 @@
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 .menu-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: none;
   }
 }
 
 .menu-toggle {
-  
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -143,7 +136,7 @@
   list-style: none;
 }
 
-.mobile-menu .link {
+.link {
   display: block;
   padding: 10px;
   color: #fff;
